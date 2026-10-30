@@ -16,4 +16,4 @@ for size in sizes:
     t_set_in = timeit.timeit(lambda: val_present in data_set, number=runs) / runs * 1e9
     t_set_out = timeit.timeit(lambda: val_missing in data_set, number=runs) / runs * 1e9
     
-    print(f"{size:<10,} | {t_list_in:<15.1f} | {t_list_out:<15.1f} | {t_set_in:<18.1f} | {t_set_out:<18.1f}")
+    print(f"{size} | {t_list_in} | {t_list_out} | {t_set_in} | {t_set_out}")
